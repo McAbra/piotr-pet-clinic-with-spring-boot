@@ -22,9 +22,16 @@
     <properties>
         <java.version>1.8</java.version>
     </properties>
-
+    <scm>
+        <developerConnection>scm:git:git@github.com:McAbra/piotr-pet-clinic-with-spring-boot.git</developerConnection>
+    </scm>
     <dependencies>
-
+        <dependency>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-release-plugin</artifactId>
+            <version>3.0.0-M1</version>
+            <type>maven-plugin</type>
+        </dependency>
     </dependencies>
 
     <build>
@@ -32,6 +39,14 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>3.0.0-M1</version>
+                <configuration>
+                    <goals>install</goals>
+                </configuration>
             </plugin>
         </plugins>
     </build>
