@@ -1,4 +1,4 @@
-package services.map;
+package org.piotr.petclinicwithspringboot.services.map;
 
 import java.util.HashMap;
 import java.util.HashSet;

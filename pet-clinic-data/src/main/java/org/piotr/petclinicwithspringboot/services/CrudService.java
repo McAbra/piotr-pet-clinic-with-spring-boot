@@ -1,4 +1,4 @@
-package services;
+package org.piotr.petclinicwithspringboot.services;
 
 import java.util.Set;
 
