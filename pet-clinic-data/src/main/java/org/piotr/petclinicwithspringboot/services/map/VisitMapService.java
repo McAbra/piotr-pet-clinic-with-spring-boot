@@ -2,9 +2,10 @@ package org.piotr.petclinicwithspringboot.services.map;
 
 import org.piotr.petclinicwithspringboot.model.Visit;
 import org.piotr.petclinicwithspringboot.services.VisitService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
-
+@Service
 public class VisitMapService extends AbstractMapService<Visit, Long> implements VisitService {
 
 
