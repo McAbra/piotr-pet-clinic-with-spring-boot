@@ -1,10 +1,16 @@
 package org.piotr.petclinicwithspringboot.model;
 
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+
 import javax.persistence.*;
 import java.time.LocalDate;
 import java.util.HashSet;
 import java.util.Set;
 
+
+@Data
+@EqualsAndHashCode(exclude = {"owner", "visits"})
 @Entity
 @Table(name = "pets")
 public class Pet extends BaseEntity {
